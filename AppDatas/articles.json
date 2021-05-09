@@ -576,5 +576,15 @@
       "password": "lokuedo5000",
       "tipo": "games"
     }
-  ]
+  ],
+  "default": {
+    "user": "lokuedo5000",
+    "imguser": "https://i.imgur.com/ItxEhvf.jpg",
+    "facebook": "https://www.facebook.com/lokuedo5000",
+    "twitter": "https://twitter.com/lokuedo5000",
+    "youtube": "https://www.youtube.com/c/lokuedo5000naancesBVH198?sub_confirmation=1",
+    "github": "https://github.com/lokuedo5000",
+    "whatsapp": "url",
+    "WebOrigen": "AppWeb"
+  }
 }
