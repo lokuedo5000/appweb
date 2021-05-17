@@ -2,7 +2,7 @@
   "vCode": "1.0",
   "vApp": "1.0.2",
   "download": {
-    "files": "",
-    "app": ""
+    "files": "https://lokuedo5000.github.io/appweb/v1-0-2/appfiles/file.zip",
+    "app": "https://lokuedo5000.github.io/appweb/v1-0-2/v1_0_2.json"
   }
 }
