@@ -116,7 +116,7 @@
       "dcp": "Sublime Text es un editor de texto y editor de código fuente. Está escrito en C++ y Python para los plugins.1​ Desarrollado originalmente como una extensión de Vim, con el tiempo fue creando una identidad propia. Aún conserva un modo de edición tipo vi llamado Vintage mode.2​\n\nSe puede descargar y evaluar de forma gratuita. Sin embargo no es software libre o de código abierto3​ y se debe obtener una licencia para su uso continuado, aunque la versión de evaluación es plenamente funcional y no tiene fecha de caducidad.",
       "enlaces": "https://mega.nz/file/vhBVWS6Y#fgp9zTh7IY4-5BKruZSVy4x4Nc_nnlJhY4omcPfuxPc",
       "RequiMin": "Desconocidos",
-      "RequiMax": "Desconocidos\n\n&lt;h5&gt;Key de activación&lt;/h5&gt;\n----- BEGIN LICENSE -----\nMember J2TeaM\nSingle User License\nEA7E-1011316\nD7DA350E 1B8B0760 972F8B60 F3E64036\nB9B4E234 F356F38F 0AD1E3B7 0E9C5FAD\nFA0A2ABE 25F65BD8 D51458E5 3923CE80\n87428428 79079A01 AA69F319 A1AF29A4\nA684C2DC 0B1583D4 19CBD290 217618CD\n5653E0A0 BACE3948 BB2EE45E 422D2C87\nDD9AF44B 99C49590 D2DBDEE1 75860FD2\n8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864\n------ END LICENSE ------\n\n&lt;h5&gt;Carpeta Etc&lt;/h5&gt;\n&lt;h6&gt;C:\\Windows\\System32\\drivers\\etc&lt;/h6&gt;\n&lt;h5&gt;Ahora les dejo el Host&lt;/h5&gt;\n&lt;h6&gt;127.0.0.1 license.sublimehq.com&lt;/h6&gt;",
+      "RequiMax": "Desconocidos",
       "infoall": "N/A",
       "tags": "Sublime Text 3, Sublime Text 3 3211, Sublime Text 3 3.2.2, @lokuedo5000",
       "generos": "editor de codigo",
@@ -125,10 +125,11 @@
       "whatsapp": "-app",
       "youtube": "-app",
       "github": "-app",
-      "fecha": "Update - 18 de Mayo 2021",
+      "fecha": "Update - 19 de Mayo 2021",
       "password": "72e5cdc9 - & - 13c3875f6c22",
       "tipo": "programs",
-      "requisitos": "bajos"
+      "requisitos": "bajos",
+      "requerido": "&lt;h5&gt;Key de activación&lt;/h5&gt;\n----- BEGIN LICENSE -----\nMember J2TeaM\nSingle User License\nEA7E-1011316\nD7DA350E 1B8B0760 972F8B60 F3E64036\nB9B4E234 F356F38F 0AD1E3B7 0E9C5FAD\nFA0A2ABE 25F65BD8 D51458E5 3923CE80\n87428428 79079A01 AA69F319 A1AF29A4\nA684C2DC 0B1583D4 19CBD290 217618CD\n5653E0A0 BACE3948 BB2EE45E 422D2C87\nDD9AF44B 99C49590 D2DBDEE1 75860FD2\n8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864\n------ END LICENSE ------\n\n&lt;h5&gt;Carpeta Etc&lt;/h5&gt;\n&lt;h6&gt;C:\\Windows\\System32\\drivers\\etc&lt;/h6&gt;\n&lt;h5&gt;Ahora les dejo el Host&lt;/h5&gt;\n&lt;h6&gt;127.0.0.1 license.sublimehq.com&lt;/h6&gt;"
     },
     {
       "id": 15,
