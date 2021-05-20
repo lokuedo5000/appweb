@@ -92,10 +92,11 @@
       "whatsapp": "-app",
       "youtube": "-app",
       "github": "-app",
-      "fecha": "Update - 18 de Mayo 2021",
+      "fecha": "Update - 19 de Mayo 2021",
       "password": "4c40e14c - & - 5f7d712bde6d",
       "tipo": "programs",
-      "requisitos": "bajos"
+      "requisitos": "bajos",
+      "requerido": "&lt;h5&gt;Todo esta en el archivo&lt;/h5&gt;"
     },
     {
       "id": 16,
@@ -456,10 +457,11 @@
       "whatsapp": "-app",
       "youtube": "-app",
       "github": "-app",
-      "fecha": "Update - 18 de Mayo 2021",
+      "fecha": "Update - 19 de Mayo 2021",
       "password": "lokuedo5000",
       "tipo": "programs",
-      "requisitos": "medios"
+      "requisitos": "medios",
+      "requerido": "&lt;h5&gt;Todo esta en el archivo&lt;/h5&gt;"
     },
     {
       "id": 5,
