@@ -1,0 +1,156 @@
+<script type="text/javascript">
+  // GET URL ART
+  function searchGet(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+      results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+  var v = searchGet('v');
+  var tp = searchGet('tp');
+
+  // GET DATA JSON
+  var gurls = articles.filter(all => all.urls == v);
+
+  // SET DATOS
+  // Title
+  $('title').text(textShort(gurls[0].name, 30) + ' | ' + 'AppWeb');
+
+  // Banner
+  $('.banner_view').attr('style', 'background-image: url('+gurls[0].banner+');');
+
+  // Icono
+  $('.iconoartimg').attr('style', 'background-image: url('+gurls[0].img+');');
+
+  // Generos
+  $('.generosall').html(listGeneros(gurls[0].generos));
+
+  // Name Art
+  $('.text_n').text(textShort(gurls[0].name, 35));
+
+  // Servidor
+  $('.text_m').text(mayuFirst(gurls[0].servidor));
+
+  // Peso
+  $('.text_p').text(gurls[0].peso);
+
+  // Version
+  $('.text_v').text(mayuFirst(gurls[0].version));
+
+  // Desarrolladora
+  $('.dsrl').text(gurls[0].desarrolladora);
+
+  // Verificar el Tipo
+  if (tp == "games") {
+    var eltp = 'juegos';
+  }else if (tp == "programs") {
+    var eltp = 'programas';
+  }
+
+  // Descripcion
+  $('.dcpart').html(gurls[0].dcp);
+
+  // Requisitos
+  // Minimos
+  $('.requimin').html(gurls[0].RequiMin);
+  // Recomendado
+  $('.requimax').html(gurls[0].RequiMax);
+
+  // Capturas
+  $('#setcaps').html(bannerset(gurls[0].capturas));
+
+  // Video
+  videoplay(gurls[0].video, 'videoinst');
+
+  // Requerido
+  if (tp == "programs") {
+    $('.requiereall').html(rePlaceAllNor(gurls[0].requerido));
+  }else {
+    $('.tp_programs').hide();
+  }
+
+  // Contraseña
+  $('.thepass').text(gurls[0].password);
+
+  // Enlaces
+  $('#linkverall').html(enlaces(gurls[0].enlaces, gurls[0].urls));
+
+  // Comentarios
+  $('.fb-comments').attr('href', 'https://www.facebook.com/lokuedo5000#'+spaceRem(gurls[0].name));
+
+  // Uploader
+  $('.img_up_ico').attr('style', 'background-image: url('+verifiqDf(gurls[0].imagenUser, artdf.imguser)+');');
+
+  // YouTube User
+  $('.subup').attr('data-link', verifiqDf(gurls[0].youtube, artdf.youtube));
+  // Recientes
+
+  // CARGAR LAST ARTICLES
+  var getlastArticles = articles.filter(all => all.tipo == tp);
+
+  // LIMPIAR
+  var last_article = document.querySelector("#aetlast");
+  last_article.innerHTML = '';
+
+  // LOADS
+  for (var g = 0; g < verifiqNumV(getlastArticles.length); g++) {
+    last_article.innerHTML += `<div class="getdataart openart" data-id='${getlastArticles[g].urls}' data-tipo='${getlastArticles[g].tipo}' style="background-image: url(${getlastArticles[g].banner});">
+                                <div class="getcol getcol-ic">
+                                  <div class="geticono" style="background-image: url(${getlastArticles[g].img});"></div>
+                                </div>
+                                <div class="getcol getcol-text">
+                                  <div class="getname">${textShort(getlastArticles[g].name, 35)}</div>
+                                </div>
+                              </div>`;
+  }
+
+  $('.openart').click(function(event) {
+    var urls = $(this).attr('data-id');
+    var tpo = $(this).attr('data-tipo');
+    window.location.href='/download?v='+urls+'&tp='+tpo;
+  });
+
+  $('.tp_ver').text(mayuFirst(eltp)).attr('href', '/'+tp);
+
+  $('.downlink').click(function (event) {
+    var idget = $(this).attr('data-id');
+    var indexget = $(this).attr('data-index');
+    $.ajax({
+      type: "POST",
+      url: "/links",
+      data: {'id': idget, 'index': indexget},
+      success: function(data)
+      {
+        var str = data;
+        str = str.replace(/\s+/g, '');
+
+        var app_web = $('body').attr('data-web');
+
+        if (app_web == 'app') {
+          $('.linkweb_open').attr('data-url', str);
+          $('.linkweb_open').click();
+        }else{
+          window.open(data, '_blank')
+        }
+
+      }
+    });
+  });
+
+  function cogresize() {
+    var gettamano = $(window).outerWidth();
+    if (gettamano >= 813) {
+      $('.cog_web_resize').removeClass('app-c-80');
+      $('.cog_web_resize').addClass('app-c-80');
+    }else{
+      $('.cog_web_resize').removeClass('app-c-80');
+    }
+  }
+  cogresize()
+  $(window).resize(function() {
+    cogresize()
+  });
+
+  // SCRIPT ALL
+  <%-script%>
+</script>

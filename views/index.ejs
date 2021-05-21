@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta content="script-src 'self' https://connect.facebook.net 'unsafe-inline' 'unsafe-eval';" http-equiv="Content-Security-Policy" /> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inicio | AppWeb</title>
+  <!-- CSS FILES -->
+  <%- include('partial/style.ejs') %>
+</head>
+
+<body data-script="appnor" data-theme="light" class="theme-light-default">
+  <!-- MENU -->
+  <%- include('partial/menu.ejs') %>
+
+
+  <!-- MENU MOVIL -->
+  <%- include('partial/menu_movil.ejs') %>
+
+  <div class="configapp d-none">
+    <div class="playcarousel" onclick="playCrsl()">play</div>
+    <div class="stopcarousel" onclick="clearInterval(crsl); crsl = null;">Stop</div>
+  </div>
+  <div class="carousel carousel-slider center box-s">
+    <%- include('partial/carousel.ejs') %>
+  </div>
+
+  <!-- Container -->
+  <div class="container sprt-b">
+    <!-- REQUISITOS Y FILTRO -->
+    <%- include('partial/requi_and_filtro.ejs') %>
+    <div class="contener_rows">
+      <div class="title_inicio_all">
+        Juegos Agregados
+      </div>
+      <div class="verrows">
+        <div class="app-row" id="view_games">
+
+          <!-- <div class="pdall app-col app-col-4">
+            <div class="contenedor_art">
+              <span class="avisoapp"><span class="trabajando">Trabajando</span></span>
+              <div class="cover box-s" style="background-image: url(https://i.imgur.com/Omodx7q.jpg);">
+                <div class="artverorclickvideo">
+                  <a href="#" class="cwI-eye3"></a>
+                  <a href="#" class="cwI-play"></a>
+                </div>
+                <div class="tituloart z-depth-3">
+                  ASSASSIN'S CREED III: LIBERATION
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contener_rows">
+      <div class="title_inicio_all">
+        Programas Agregados
+      </div>
+      <div class="verrows">
+        <div class="app-row" id="view_programs">
+
+          <!-- <div class="pdall app-col app-col-4">
+            <div class="contenedor_art">
+              <span class="avisoapp"><span class="trabajando">Trabajando</span></span>
+              <div class="cover box-s" style="background-image: url(https://i.imgur.com/Omodx7q.jpg);">
+                <div class="tituloart z-depth-3">
+                  ASSASSIN'S CREED III: LIBERATION
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contener_rows">
+      <div class="title_inicio_all">
+        Deja tu Comentario
+      </div>
+      <div class="constdata">
+        <div class="constdata" id="comentarios">
+          <div class="fb-comments" data-href="https://www.facebook.com/lokuedo5000#appweb" data-width="100%" data-numposts="12"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- FOOTER -->
+  <%- include('partial/footer.ejs') %>
+
+
+  <!-- SCRIPT FILES -->
+  <%- include('partial/scriptfiles.ejs') %>
+  <!-- SCRIPT FACEBOOK -->
+  <%- include('partial/script_fbook.ejs') %>
+  <!-- SCRIPT DB -->
+  <%- include('partial/script/viewdb.ejs') %>
+  <!-- SCRIPT VIEW HOME -->
+  <%- include('partial/script/all.ejs') %>
+  <%- include('partial/script/script_home.ejs') %>
+
+  <script type="text/javascript">
+    $('.carousel').carousel();
+    $(".carousel").hover(function() {
+      $('.stopcarousel').click();
+    }, function() {
+      $('.playcarousel').click();
+    });
+
+    var runStart = 5000,
+      crsl = null;
+
+    function playCrsl() {
+      if (!crsl)
+        crsl = setInterval(carouSel, runStart);
+    }
+
+    function carouSel() {
+      $('.carousel').carousel('next');
+    }
+    crsl = setInterval(carouSel, runStart);
+    // const url = 'https://lokuedo5000.github.io/appweb/AppDatas/articles.json';
+    // fetch(url)
+    //   .then((resp) => resp.json())
+    //   .then(function(data) {
+    //
+    //   })
+    //   .catch(function(error) {
+    //     console.log(error);
+    //   });
+  </script>
+</body>
+
+</html>

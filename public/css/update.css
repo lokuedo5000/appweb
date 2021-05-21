@@ -1,0 +1,18 @@
+.avisodes{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  width: 300px;
+  height: 50px;
+}
+.wrapper span {
+  display: inline-block;
+  letter-spacing: 3px;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.wrapper{
+}

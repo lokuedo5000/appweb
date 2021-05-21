@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta content="script-src 'self' https://connect.facebook.net 'unsafe-inline' 'unsafe-eval';" http-equiv="Content-Security-Policy" /> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Programas | AppWeb</title>
+  <!-- CSS FILES -->
+  <%- include('partial/style.ejs') %>
+</head>
+
+<body data-script="appnor" data-theme="light" class="theme-light-default">
+
+  <!-- MENU -->
+  <%- include('partial/menu.ejs') %>
+
+
+  <!-- MENU MOVIL -->
+  <%- include('partial/menu_movil.ejs') %>
+
+  <!-- Container -->
+  <div class="container sprt-b">
+    <!-- REQUISITOS Y FILTRO -->
+    <%- include('partial/requi_and_filtro.ejs') %>
+    <div class="contener_rows">
+      <div class="title_inicio_all">
+        Programas
+      </div>
+      <div class="verrows">
+        <div class="app-row" id="view_games">
+
+          <!-- <div class="pdall app-col app-col-4">
+            <div class="contenedor_art">
+              <span class="avisoapp"><span class="trabajando">Trabajando</span></span>
+              <div class="cover box-s" style="background-image: url(https://i.imgur.com/Omodx7q.jpg);">
+                <div class="artverorclickvideo">
+                  <a href="#" class="cwI-eye3"></a>
+                  <a href="#" class="cwI-play"></a>
+                </div>
+                <div class="tituloart z-depth-3">
+                  ASSASSIN'S CREED III: LIBERATION
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="contener_rows">
+      <div class="title_inicio_all">
+        Deja tu Comentario
+      </div>
+      <div class="constdata">
+        <div class="constdata" id="comentarios">
+          <div class="fb-comments" data-href="https://www.facebook.com/lokuedo5000#appweb" data-width="100%" data-numposts="12"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- FOOTER -->
+  <%- include('partial/footer.ejs') %>
+
+
+
+  <!-- SCRIPT FILES -->
+  <%- include('partial/scriptfiles.ejs') %>
+  <!-- SCRIPT FACEBOOK -->
+  <%- include('partial/script_fbook.ejs') %>
+  <!-- SCRIPT DB -->
+  <%- include('partial/script/viewdb.ejs') %>
+  <!-- SCRIPT VIEW HOME -->
+  <%- include('partial/script/all.ejs') %>
+  <%- include('partial/script/script_programs.ejs') %>
+
+</body>
+
+</html>

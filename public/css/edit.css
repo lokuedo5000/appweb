@@ -1,0 +1,20 @@
+.form{
+  padding: 3em!important;
+  overflow: visible;
+}
+.selectedit{
+  padding: 0 3em;
+}
+.editforms{
+  background-color: #fff;
+  padding: 20px 15px;
+}
+.titleedit{
+  margin-bottom: 15px;
+}
+.pass-no{
+
+}
+.pass-hide{
+  display: none;
+}

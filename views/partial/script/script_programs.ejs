@@ -1,0 +1,26 @@
+<script type="text/javascript">
+  // VER ULTIMOS JUEGOS
+  var artfiltro = articles.filter(all => all.tipo == 'programs');
+  // CLEAR ART
+  var row_add = document.querySelector("#view_games");
+  row_add.innerHTML = '';
+  // ADD ART
+  for (var g = 0; g < artfiltro.length; g++) {
+    row_add.innerHTML += `<div class="pdall app-col app-col-4">
+                            <div class="contenedor_art">
+                              <span class="avisoapp">${verifiqEstado(artfiltro[g].estado, artfiltro[g].version)}</span>
+                              <div class="cover box-s" style="background-image: url(${artfiltro[g].img});">
+                                <div class="artverorclickvideo">
+                                  <a href="/download?v=${artfiltro[g].urls}&tp=${artfiltro[g].tipo}" class="cwI-eye3"></a>
+                                  <a href="#play" class="cwI-play playvideoset" data-video="${artfiltro[g].video}"></a>
+                                </div>
+                                <div class="tituloart z-depth-3">
+                                  ${textShort(artfiltro[g].name, 30)}
+                                </div>
+                              </div>
+                            </div>
+                          </div>`;
+  }
+
+  <%-script%>
+</script>

@@ -1,0 +1,15 @@
+.theme-light-default .inputsearch input{
+  color: #fff!important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+.theme-light-default .inputsearch input::placeholder{
+  color: #fff!important;
+}
+.theme-light-default .inputsearch .searchbtnmenu {
+  background-color: rgba(142, 68, 173, 0.4);
+  color: #fff;
+}
+.theme-light-default .enviar_filtro{
+  background-color: rgba(142, 68, 173, 0.4);
+  color: #fff;
+}

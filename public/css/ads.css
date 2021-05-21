@@ -1,0 +1,100 @@
+@import 'fonts.css';
+body {
+  background-color: #ecf0f1;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-family: Roboto;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.datosads{
+  padding: 20px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.sesactivar, .setclear{
+  background-image: linear-gradient(to bottom right, #D45BA1, #A784E0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Roboto;
+  padding: 8px 15px;
+  margin-bottom: 8px;
+}
+.datosads .dcpads{
+  margin: 20px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.textall{
+  text-transform: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.closeads{
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  z-index: 9999;
+  padding: 4px 8px;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #000000;
+  border-radius: 5px;
+}
+.pretext{
+  white-space: pre-line;
+}
+.linkall{
+  display: none;
+}
+.footerapp{
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.cospy{
+}
+.iconoredes{
+  margin: 5px 0;
+  padding: 2px 0;
+}
+.iconoredes a{
+  color: #222;
+  font-size: 27px;
+}
+.posiup{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999999;
+}
+/*SCROLL*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  background-image: rgba(211, 84, 0, 1.0);
+}

@@ -1,0 +1,77 @@
+<div class="requisitos app-row">
+  <div class="app-col app-col-3 pdall">
+    <a href="/filtro?requisito=3&version=0&tipo=0&genero=0" class="categoria" style="background-image: url(images/bajos.png);">
+      <span class="rquitext requibajos">Bajos</span>
+    </a>
+  </div>
+
+  <div class="app-col app-col-3 pdall">
+    <a href="/filtro?requisito=2&version=0&tipo=0&genero=0" class="categoria" style="background-image: url(images/medios.png);">
+      <span class="rquitext requimedios">Medios</span>
+    </a>
+  </div>
+
+  <div class="app-col app-col-3 pdall">
+    <a href="/filtro?requisito=1&version=0&tipo=0&genero=0" class="categoria" style="background-image: url(images/altos.png);">
+      <span class="rquitext requialtos">Altos</span>
+    </a>
+  </div>
+</div>
+<div class="contener_rows">
+  <div class="row m-0">
+    <div class="col s12">
+      <div class="title_inicio_all">
+        Busqueda Avanzada
+      </div>
+    </div>
+  </div>
+  <div class="row m-0">
+    <div class="col s3">
+      <label>Requisitos</label>
+    </div>
+    <div class="col s3">
+      <label>Version</label>
+    </div>
+    <div class="col s3">
+      <label>Tipo</label>
+    </div>
+    <div class="col s3">
+      <label>Genero</label>
+    </div>
+  </div>
+  <form class="filtrosearch" method="get" action="/filtro">
+    <div class="row">
+      <div class="col s3">
+        <select class="browser-default" name="requisito">
+          <option value="0" selected>-Select</option>
+          <option value="1">Altos</option>
+          <option value="2">Medios</option>
+          <option value="3">Bajos</option>
+        </select>
+      </div>
+
+      <div class="col s3">
+        <select class="browser-default" name="version">
+          <option value="0" selected>-Select</option>
+          <option value="1">Portable</option>
+          <option value="2">Instalable</option>
+        </select>
+      </div>
+
+      <div class="col s3">
+        <select class="browser-default" name="tipo">
+          <option value="0" selected>-Select</option>
+          <option value="1">Juegos</option>
+          <option value="2">Programas</option>
+        </select>
+      </div>
+
+      <div class="col s3">
+        <select class="browser-default" name="genero">
+          <option value="0" selected>-Select</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="enviar_filtro cwI-search1"></button>
+  </form>
+</div>

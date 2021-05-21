@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta content="script-src 'self' https://connect.facebook.net 'unsafe-inline' 'unsafe-eval';" http-equiv="Content-Security-Policy" /> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AppWeb</title>
+  <!-- CSS FILES -->
+  <%- include('partial/style.ejs') %>
+</head>
+
+<body data-script="appnor" data-theme="light" class="theme-light-default">
+
+  <!-- MENU -->
+  <%- include('partial/menu.ejs') %>
+
+
+  <!-- MENU MOVIL -->
+  <%- include('partial/menu_movil.ejs') %>
+
+  <!-- BANNER -->
+  <div class="banner_view box-s">
+    <div class="data_benner">
+      <div class="app-c app-c-80 col_art">
+        <div class="iconoart">
+          <div class="iconoartimg z-depth-3">
+
+          </div>
+        </div>
+        <div class="textart">
+          <div class="artbgrgba">
+            <div class="nameart text_n">
+              ?
+            </div>
+            <div class="textother">
+              <span class="textsv">Generos:</span>
+              <div class="generosall">?</div>
+            </div>
+            <div class="textother">
+              <span class="textsv">Servidor:</span> <span class="textsvset text_m">?</span>
+            </div>
+            <div class="textother">
+              <span class="textsv">Peso:</span> <span class="textsvset text_p">?</span>
+            </div>
+            <div class="textother">
+              <span class="textsv">Partes:</span> <span class="textsvset text_prts">?</span>
+            </div>
+            <div class="textother">
+              <span class="textsv">Version:</span> <span class="textsvset text_v">?</span>
+            </div>
+            <div class="textother">
+              <span class="textsv">Desarrolladora:</span> <span class="textsvset dsrl">?</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cog_web_resize app-c app-c-80">
+    <div class="row">
+      <div class="col s12 m8">
+        <nav class="ver_navs">
+          <div class="clis">
+            <div class="nav-wrapper">
+              <div class="col s12">
+                <a href="/" class="breadcrumb">Inicio</a>
+                <a href="#!" class="breadcrumb tp_ver">?</a>
+                <a href="#!" class="breadcrumb"><span class="text_n settext">?</span></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Descripcion
+            </div>
+            <div class="textall preline dcpart"></div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Requisitos
+            </div>
+            <div class="textall">
+              <div class="app-c">
+                <div class="row m-0">
+                  <div class="col s12 m6">
+                    <h5>Minimos:</h5>
+                    <div class="requimin preline"></div>
+                  </div>
+
+                  <div class="col s12 m6">
+                    <h5>Recomendados:</h5>
+                    <div class="requimax preline"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Capturas
+            </div>
+            <div class="textall textall_cp">
+              <div class="configapp d-none">
+                <div class="playcarousel" onclick="playCrsl()">play</div>
+                <div class="stopcarousel" onclick="clearInterval(crsl); crsl = null;">Stop</div>
+              </div>
+              <div class="carousel carousel-slider center" id="setcaps">
+                <div class="carousel-item red white-text setcap" href="#one!" style="background-image: url();">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Video de Instalacion
+            </div>
+            <div class="textall videoins" id="videoinst">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw tp_programs">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Requerido
+            </div>
+            <div class="textall preline requiereall">????</div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Contraseña/s
+            </div>
+            <div class="textall pass_all">
+              <h5 class="m-0 thepass">????</h5>
+              <h6>si hay dos contraseñas y están separadas por esto " - & - " eso quiere decir que hay dos archivos con diferentes contraseñas</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Enlaces
+              <!--<div class="vewpass"><span class="textpass">Contraseña</span></div> -->
+            </div>
+            <div class="textall textall_cp" id="linkverall">
+
+              <!-- <div class="listlinktb">
+                <div class="textpart">
+                  <span>
+                    (#1)
+                  </span>
+                </div>
+                <div class="textlink">
+                  https://www.mediafire.com/file/uc7hlo65eqsoiy2/B4T1MC3_sshort_Games.part1.rar/file
+                </div>
+                <div class="btnir">
+                  <span class="dpib downlink box-s">
+                    Descargar
+                  </span>
+                </div>
+              </div> -->
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Deja tu comentario
+            </div>
+            <div class="textall">
+              <div class="fb-comments" data-href="https://www.facebook.com/lokuedo5000#appweb" data-width="100%" data-numposts="12"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col s12 m4">
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Uploader
+            </div>
+            <div class="p_data_right">
+              <div class="contener_name_img">
+                <div class="img_up">
+                  <div class="img_up_ico" style="">
+
+                  </div>
+                </div>
+                <div class="name_up">
+                  <div class="nombreuser">lokuedo5000</div>
+                  <div class="sp">
+                    <div class="btn red opa subup" data-link="">Suscribete</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Facebook Web
+            </div>
+            <div class="p_data_right">
+              <div class="fb-page" data-href="https://www.facebook.com/lokuedo5000" data-tabs="false" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/lokuedo5000" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/lokuedo5000">Lokuedo5000</a></blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view">
+            <div class="title-view">
+              Articulos Reciente
+            </div>
+            <div class="p_data_right" id="aetlast">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view" title="con un click aqui y saltar la publicidad">
+            <div class="title-view">
+              Donar on Click
+            </div>
+            <div class="p_data_right">
+              <div class="openads opa" style="background-image: url(https://i.imgur.com/nEg3hkL.png);" data-link="http://adf.ly/9857561/https://www.youtube.com/c/lokuedo5000naancesBVH198"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sprt-dw">
+          <div class="contenedor-view" title="Monetiza tu pagina web">
+            <div class="title-view">
+              Monetiza tu Web
+            </div>
+            <div class="p_data_right">
+              <div class="openads opa" style="background-image: url(https://i.imgur.com/UKyc64B.png);" data-link="http://adf.ly/9857561/https://publishers.adsterra.com/referral/7UKr1Xg8jx"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <%- include('partial/footer.ejs') %>
+
+
+  <!-- SCRIPT FILES -->
+  <%- include('partial/scriptfiles.ejs') %>
+  <!-- SCRIPT FACEBOOK -->
+  <%- include('partial/script_fbook.ejs') %>
+  <!-- SCRIPT DB -->
+  <%- include('partial/script/viewdb.ejs') %>
+  <!-- SCRIPT VIEW HOME -->
+  <!-- SCRIPT VIEW HOME -->
+  <%- include('partial/script/all.ejs') %>
+  <%- include('partial/script/script_download.ejs') %>
+
+  <script type="text/javascript">
+    $('.carousel').carousel();
+    $(".carousel").hover(function() {
+      $('.stopcarousel').click();
+    }, function() {
+      $('.playcarousel').click();
+    });
+
+    var runStart = 5000,
+      crsl = null;
+
+    function playCrsl() {
+      if (!crsl)
+        crsl = setInterval(carouSel, runStart);
+    }
+
+    function carouSel() {
+      $('.carousel').carousel('next');
+    }
+    crsl = setInterval(carouSel, runStart);
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<script type="text/javascript">
+  // TRAILER
+  $('.thevideorep').on('click', function(e) {
+    if (e.target !== this)
+      return;
+    $('.thevideorep').fadeOut(200);
+    $('#videoyt').html('');
+    $('body').removeClass('bodyhd');
+  });
+
+  // LOAD GENEROS
+  $('select[name=tipo]').change(function(event) {
+    var thetipo = $(this).val();
+
+    if (thetipo == "1") {
+      $('select[name=genero]').html(creaGenes());
+    } else if (thetipo == "2") {
+      $('select[name=genero]').html(creaGenesPrograms());
+    } else {
+      $('select[name=genero]').html('<option value="0" selected>-Select</option>');
+    }
+  });
+
+  function creaGenes() {
+    var creategeneros = dbtb.geneGames;
+    var s = ""
+    for (var key in creategeneros) {
+      var num = parseInt(key) + parseInt(1);
+      s += '<option value="' + creategeneros[key] + '">' + mayuFirst(creategeneros[key]) + '</option>';
+    }
+    return '<option value="0" selected>-Select</option>' + s;
+  }
+
+  function creaGenesPrograms() {
+    var creategeneros = dbtb.genePrograms;
+    var s = ""
+    for (var key in creategeneros) {
+      var num = parseInt(key) + parseInt(1);
+      s += '<option value="' + creategeneros[key] + '">' + mayuFirst(creategeneros[key]) + '</option>';
+    }
+    return '<option value="0" selected>-Select</option>' + s;
+  }
+</script>
