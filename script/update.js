@@ -14,7 +14,64 @@ function getvFiles() {
   return JSON.parse(file_arts);
 }
 
+function artLocal(text) {
+  if (text == "text") {
+    return fs.readFileSync(path.join(__dirname, '../', 'data', 'articles.json'), 'utf-8');
+  } else {
+    var file_arts = fs.readFileSync(path.join(__dirname, '../', 'data', 'articles.json'), 'utf-8');
+    return JSON.parse(file_arts);
+  }
+}
+
+function artDownload(text) {
+  if (text == "text") {
+    return fs.readFileSync(path.join(__dirname, '../', 'data', 'tempfiles', 'articles.json'), 'utf-8');
+  } else {
+    var file_arts = fs.readFileSync(path.join(__dirname, '../', 'data', 'tempfiles', 'articles.json'), 'utf-8');
+    return JSON.parse(file_arts);
+  }
+}
+
 module.exports = {
+  jsonUpdate: function() {
+    var file = fs.createWriteStream(path.join(__dirname, '../', 'data', 'tempfiles', 'articles.json'));
+    var len = 0;
+    https.get(getPackage().download.Articles, function(res) {
+      res.on('data', function(chunk) {
+        file.write(chunk);
+        len += chunk.length;
+        //var percent = (len / res.headers['content-length']) * 100;
+      });
+      res.on('end', function() {
+        file.close();
+      });
+      file.on('close', function() {
+        if (artLocal('json').articles.length == artDownload('json').articles.length) {
+          if (artLocal('text') == artDownload('text')) {
+
+          }else{
+            var setTitle = document.querySelector("title");
+            setTitle.innerText += " - (Articulos Actualizados)";
+
+            // SAVE NEW DATA
+            fs.writeFileSync(path.join(__dirname, '../', 'data', 'articles.json'), artDownload('text'), 'utf-8');
+          }
+        }else{
+          var setTitle = document.querySelector("title");
+          setTitle.innerText += " - (Hay Articulos Nuevos)";
+
+          // SAVE NEW DATA
+          fs.writeFileSync(path.join(__dirname, '../', 'data', 'articles.json'), artDownload('text'), 'utf-8');
+        }
+      });
+    }).on('error', function() {});
+  },
+  jsonCompare: function() {
+
+  },
+  UpdateBtn: function() {
+
+  },
   downloadVcode: function() {
     var file = fs.createWriteStream(path.join(__dirname, '../', 'data', 'vfiles.json'));
     var len = 0;

@@ -41,8 +41,11 @@ window.addEventListener('DOMContentLoaded', () => {
       updateBtn.setAttribute("class", 'btn-floating btn-large red pulse clickupdate clickweb opa');
       updateBtn.innerHTML = "<i class='cwI-cloud-download1'></i>";
       sethtml.appendChild(updateBtn);
+
+      newapp();
+
       var verif = false;
-    }else{
+    } else {
       var verif = true;
     }
     if (verif == true) {
@@ -58,20 +61,24 @@ window.addEventListener('DOMContentLoaded', () => {
         sethtml.appendChild(updateBtn);
 
         // SET NEW DATOS
-        if (getinfo.download.vFilesZip == vfile.download.files) {
-        }else{
+        if (getinfo.download.vFilesZip == vfile.download.files) {} else {
           getinfo.download.vFilesZip = vfile.download.files;
           fs.writeFileSync(appweb.rutaPk(), JSON.stringify(getinfo, null, 2), 'utf-8');
         }
         // JSON ARTICLES
-        if (getinfo.download.Articles == vfile.download.Articles) {
-        }else{
+        if (getinfo.download.Articles == vfile.download.Articles) {} else {
           getinfo.download.Articles = vfile.download.Articles;
           fs.writeFileSync(appweb.rutaPk(), JSON.stringify(getinfo, null, 2), 'utf-8');
         }
       }
     }
-  }else if (appScript == "update") {
+
+    // AUTO UPDATE ARTICLES
+    var settime = setInterval(function() {
+      appweb.jsonUpdate();
+    }, 1 * 1000 * 60 * 4);
+    // appweb.jsonUpdate();
+  } else if (appScript == "update") {
     var vfile = appweb.vfiles();
     var upda = setInterval(function() {
       clearInterval(upda);
@@ -92,13 +99,15 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  // const opennew = document.querySelector(".clickweb");
-  // opennew.addEventListener("click", function(evento) {
-  //   var closeapp = setInterval(function() {
-  //     clearInterval(closeapp);
-  //     ipcRenderer.send('-app', 'close');
-  //   }, 2000);
-  // })
+  function newapp() {
+    const opennew = document.querySelector(".clickweb");
+    opennew.addEventListener("click", function(evento) {
+      var closeapp = setInterval(function() {
+        clearInterval(closeapp);
+        ipcRenderer.send('-app', 'close');
+      }, 2000);
+    })
+  }
 
   // OPEN LINKS
   let urls = document.querySelectorAll('.linkweb_open');

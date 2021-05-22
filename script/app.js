@@ -22,7 +22,6 @@ const url = require('url');
 const path = require('path');
 const fs = require('fs');
 const https = require('https');
-const download = require('download-git-repo');
 // REQUIRE JS GENERADOR ID
 const {
   v4: uuidv4
@@ -53,14 +52,10 @@ function craeteData(datafile) {
 craeteData(path.join(__dirname, '../', 'data'));
 craeteData(path.join(__dirname, '../', 'data', 'tempfiles'));
 
-download('direct:https://github.com/lokuedo5000/appweb.git', path.join(__dirname, '../', 'data', 'tempfiles'), { clone: true }, function (err) {
-  console.log(err ? 'Error' : 'Success')
-})
-
 // SERVER
 // SETTING SERVER
 web.set("view engine", "ejs");
-web.set('port', getPackage().config.port)
+web.set('port', process.env.PORT || getPackage().config.port)
 web.use(express.urlencoded({
   extended: false
 }));
@@ -229,6 +224,10 @@ web.use(function(req, res) {
 })
 
 // LISTENIG ON SERVER
+// if ('localhost:'+web.get('port')) {
+//
+// }
+
 web.listen(web.get('port'), () => {
 
 })
@@ -288,6 +287,8 @@ ipcMain.on('-app', (e, data) => {
   }
 })
 
+
+
 //QUITAR MENU
 Menu.setApplicationMenu(null);
 
@@ -324,7 +325,7 @@ var templateMenu = [{
 }];
 
 // Reload in Development for Browser Windows
-var DevTools = process.env.APP_DEV ? (process.env.APP_DEV.trim() == "true") : true;
+var DevTools = process.env.APP_DEV ? (process.env.APP_DEV.trim() == "true") : false;
 
 if (DevTools) {
   templateMenu.push({
