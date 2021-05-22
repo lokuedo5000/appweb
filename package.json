@@ -11,11 +11,10 @@
   "download": {
     "vCode": "https://lokuedo5000.github.io/appweb/v1-0-2/v1_0_2.json",
     "vFilesZip": "https://lokuedo5000.github.io/appweb/v1-0-2/appfiles/1_0_2.zip",
-    "NewApp": "https://lokuedo5000.github.io/appweb/v1-0-2/v1_0_2.json",
     "Articles": "https://lokuedo5000.github.io/appweb/AppDatas/articles.json"
   },
   "config": {
-    "port": "8023",
+    "port": "8523",
     "host": "localhost",
     "open": true
   },
@@ -34,7 +33,6 @@
   "author": "@lokuedo5000 <loketre50@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "download-git-repo": "^3.0.2",
     "ejs": "^3.1.6",
     "electron-window-state-manager": "^0.3.2",
     "express": "^4.17.1",
