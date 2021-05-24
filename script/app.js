@@ -303,6 +303,9 @@ var templateMenu = [{
       }
     },
     {
+      role: 'reload'
+    },
+    {
       type: 'separator'
     },
     {
