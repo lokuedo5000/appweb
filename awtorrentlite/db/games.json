@@ -352,6 +352,24 @@
       "minimos": "Sistema operativoWindows 7 o superior.\nProcesador2 GHz o superior (compatible con el conjunto de instrucciones SSE2)\nMemoria2 GB de RAM.\nAlmacenamiento2 GB.\nDirectXVersión 10.\nTarjeta gráfica1 GB de VRAM.",
       "recomendados": "Sistema operativoWindows 7 o superior.\nProcesador2 GHz o superior (compatible con el conjunto de instrucciones SSE2)\nMemoria2 GB de RAM.\nAlmacenamiento2 GB.\nDirectXVersión 10.\nTarjeta gráfica1 GB de VRAM.",
       "dcp": "Spelldrifter combina las tácticas posicionales tipo rompecabezas de un juego de rol por turnos con la personalización y la capacidad de reproducción de un juego de cartas coleccionables. El resultado: un híbrido, en el que los jugadores deben hacer malabarismos con los recursos a su disposición utilizando tanto el tiempo como el espacio."
+    },
+    {
+      "id": "21",
+      "urls": "3a39173b-bc32",
+      "fecha": "02 de Julio 2021",
+      "titulo": "Anima The Reign of Darkness",
+      "nombre": "Anima The Reign of Darkness",
+      "cover": "https://i.imgur.com/Locl30x.jpg",
+      "banner": "https://i.imgur.com/X0ny4u9.jpg",
+      "desarrolladora": "Redeev",
+      "trailer": "s9YV3QqtBy8",
+      "version": "Codex",
+      "peso": "1.33 GB",
+      "generos": "accion,aventura",
+      "tags": "Anima The Reign of Darkness, @lokuedo5000",
+      "minimos": "Requires a 64-bit processor and operating system\nOS: Windows XP / Windows Vista / Windows 7 / Windows 8 / Windows 10\nProcessor: x86 compatible 2.3GHz or faster processor (Intel 2nd generation core i-series or equivalent)\nMemory: 4 GB RAM\nGraphics: 512MB NVIDIA GeForce 6800 series or ATI Radeon X800 series or better\nDirectX: Version 11\nStorage: 5 GB available space",
+      "recomendados": "Requires a 64-bit processor and operating system\nOS: Windows XP / Windows Vista / Windows 7 / Windows 8 / Windows 10\nProcessor: x86 compatible 2.3GHz or faster processor (Intel 2nd generation core i-series or equivalent)\nMemory: 6 GB RAM\nGraphics: 1.5GB NVIDIA GeForce 500 series or ATI Radeon 6000 series or better",
+      "dcp": "Anima es un videojuego de acción RPG (hack&#39;n slash) inspirado en los mejores juegos de la vieja escuela y creado con pasión por los amantes de los juegos de rol para los amantes de los juegos de rol.\nDespués del gran éxito logrado en los dispositivos móviles, ¡anima finalmente llega a la PC con nuevos gráficos y jugabilidad!\n¡Conquista la campaña para un jugador con dificultades de juego potencialmente infinitas, sigue la historia o simplemente continúa, corta enemigos, saquea objetos y mejora tu personaje!\n¡Baja y explora el abismo, mata demonios, bestias, caballeros oscuros y otras criaturas demoníacas que pueblan más de 100 niveles y luego desafía tus habilidades con una pelea de jefes atractiva! ¡Explora diferentes escenarios oscuros, revela secretos ocultos y explora lugares únicos!"
     }
   ],
   "torrents": [
@@ -434,6 +452,10 @@
     {
       "artID": "771ce3eb-78fe",
       "torrents": "magnet:?xt=urn:btih:a4dcd316dec5fcff2976df8bd32b804747fac5e2&dn=Spelldrifter-CODEX&tr=http://tracker.trackerfix.com:80/announce&tr=udp://9.rarbg.me:2910/announce&tr=udp://9.rarbg.to:2990/announce&tr=udp://tracker.tallpenguin.org:15770/announce&tr=udp://tracker.thinelephant.org:12790/announce"
+    },
+    {
+      "artID": "3a39173b-bc32",
+      "torrents": "magnet:?xt=urn:btih:1e00060ad8b61a22241d25d4072ab345135673f2&dn=Anima_The_Reign_of_Darkness-FLT&tr=http://tracker.trackerfix.com:80/announce&tr=udp://9.rarbg.me:2990/announce&tr=udp://9.rarbg.to:2830/announce&tr=udp://tracker.fatkhoala.org:13790/announce&tr=udp://tracker.tallpenguin.org:15720/announce"
     }
   ],
   "usuarios": [],
