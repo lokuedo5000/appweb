@@ -388,6 +388,24 @@
       "minimos": "Requires a 64-bit processor and operating system\nOS: Windows 10\nProcessor: Intel Core i5 2400 -OR- AMD Phenom II X6 1100T\nMemory: 8 GB RAM\nGraphics: Radeon HD6870 -OR- GeForce GTX 295 (Does not support Intel Integrated Graphics Cards)\nStorage: 2 GB available space",
       "recomendados": "SO: NO INFORMADO\nProcesador: NO INFORMADO\nMemoria: NO INFORMADO\nGráficos: NO INFORMADO\nMemoria en disco: 2 GB libres",
       "dcp": "Nanotale - Typing Chronicles es un juego de rol de aventuras de mecanografía atmosférico ambientado en un mundo colorido y vibrante. Siga a Rosalind, una archivista novata, en su viaje para explorar un mundo distante. En su búsqueda por reunir conocimientos, recolecta muestras de bellezas naturales místicas. Todo está en paz. La guerra es cosa del pasado lejano.\n\nEn las sombras, se difunde una historia de magia disonante que infunde corrupción en los corazones rotos."
+    },
+    {
+      "id": "23",
+      "urls": "ff9e2d2d-a4da",
+      "fecha": "02 de Julio 2021",
+      "titulo": "Dragon Ball Z Kakarot - Trunks The Warrior of Hope",
+      "nombre": "Dragon Ball Z Kakarot - Trunks The Warrior of Hope",
+      "cover": "https://i.imgur.com/AqNKkIh.jpg",
+      "banner": "https://i.imgur.com/D0grUA2.jpg",
+      "desarrolladora": "CyberConnect2",
+      "trailer": "9oE0asFgKNg",
+      "version": "Codex",
+      "peso": "36.05 GB",
+      "generos": "accion,aventura",
+      "tags": "Dragon Ball Z Kakarot - Trunks The Warrior of Hope, @lokuedo5000",
+      "minimos": "SO: Windows 7 SP1 64-bit\nProcesador: Intel Core i5-2400 or AMD Phenom II X6 1100T\nMemoria: 4 GB de RAM\nGráficos: GeForce GTX 750 Ti or Radeon HD 7950\nRed: Conexión de banda ancha a Internet",
+      "recomendados": "SO: Windows 10 64-bit\nProcesador: Intel Core i5-3470 or AMD Ryzen 3 1200\nMemoria: 8 GB de RAM\nGráficos: GeForce GTX 960 or Radeon R9 280X\nDirectX: Versión 11\nRed: Conexión de banda ancha a Internet",
+      "dcp": "¡Conoce la intensa lucha de Trunks por sobrevivir en un mundo arrasado en esta nueva historia!\n\nTras la muerte de Son Goku por un virus cardíaco, el mundo acaba destruido por los androides. Los guerreros supervivientes, Trunks y Son Gohan, lucharán para proteger el planeta.\n\nEl DLC incluye:\n- Nueva historia\n- Nuevos superataques\n- Nuevos emblemas de alma\n- Y más\n\nTRUNKS - EL GUERRERO DE LA ESPERANZA se puede jugar sin completar la historia principal."
     }
   ],
   "torrents": [
@@ -478,6 +496,10 @@
     {
       "artID": "91ce605d-90b6",
       "torrents": "magnet:?xt=urn:btih:270a0eb0dfc5468d25a96f2cc410cfba50bdf89d&dn=Nanotale_Typing_Chronicles_v1.0h-DINOByTES&tr=http://tracker.trackerfix.com:80/announce&tr=udp://9.rarbg.me:2980/announce&tr=udp://9.rarbg.to:2960/announce&tr=udp://tracker.tallpenguin.org:15740/announce&tr=udp://tracker.thinelephant.org:12760/announce"
+    },
+    {
+      "artID": "ff9e2d2d-a4da",
+      "torrents": "magnet:?xt=urn:btih:69347eedeab463a2635b550325b727fa986d67da&dn=Dragon.Ball.Z.Kakarot.Trunks.The.Warrior.of.Hope-CODEX&tr=http://tracker.trackerfix.com:80/announce&tr=udp://9.rarbg.me:2830/announce&tr=udp://9.rarbg.to:2810/announce&tr=udp://tracker.thinelephant.org:12780/announce&tr=udp://tracker.fatkhoala.org:13790/announce"
     }
   ],
   "usuarios": [],
